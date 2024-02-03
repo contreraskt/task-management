@@ -1,0 +1,9 @@
+
+
+.pagination .page-link {
+    display: none;
+}
+.pagination .page-item.prev,
+.pagination .page-item.next {
+    display: none;
+}
