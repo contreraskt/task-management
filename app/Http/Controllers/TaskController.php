@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Storage;
 class TaskController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index(Request $request)
     { 
         $perPageOptions = [10, 20, 50];  
